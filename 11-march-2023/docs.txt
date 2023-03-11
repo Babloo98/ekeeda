@@ -1,0 +1,24 @@
+Git : 
+1. Git is a version control system.
+2. Multiple developers can use the same code and write there codes.
+3. GUI and Git bash.
+4. We can store our code.
+5. Both private and public.
+
+
+Repository : 
+1. Store a particular files / data that may be related or not be related.
+2. Basically a storage cloud.
+
+
+Basic commands : 
+git init ->  Initialize a project.
+git add . / git add filename --->
+git commit -am "Meaningful message"
+git push origin 'branch_Name' : default branch -> main 
+
+
+
+
+
+untracked --> stage -> push
