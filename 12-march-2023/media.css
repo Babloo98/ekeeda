@@ -1,0 +1,32 @@
+body{
+    background-color: red;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.child_container{
+    width: 40%;
+}
+
+.child_container p {
+    color: #ffffff;
+    border: 1px solid snow;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .container{
+        flex-direction: column !important;
+
+    }
+    .child_container{
+        width: 100%;
+    }
+  }

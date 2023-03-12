@@ -1,0 +1,39 @@
+HTML : 
+Form attributes.
+Browser api's.
+Semantic tags.
+
+Css : 
+Grid. To be picked later
+Flexbox. DONE
+Absolute and relative position. DONE
+pseudo classes.
+css preprocessors.
+css and css3 difference. DONE
+css box-model [margin]. DONE
+media querry.
+Animation. [ Next friday ]
+
+Box-model : 
+margin -> to give space between two different elements (<p>, <div>, <aside>)
+padding -> to give the space within same element.
+border -> border is used to denote how much area is being used by a particular element.
+
+1. element.
+2. padding .
+3. border.
+4. margin.
+
+
+css and css3 difference: 
+css -> clear : float-left, float-right, float-all
+css3 : flexbox --->
+
+
+
+
+
+
+
+
+

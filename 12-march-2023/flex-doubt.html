@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<!-- it is ony for showing that we are using HTML-5 version -->
+<!-- HTML can run without any specified tag -->
+<html>
+<head>
+    <title>Flexbox-Doubts</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .child_1{
+            background-color: aqua;
+            color: black;
+            font-weight: 700;
+            font-size: 20px;
+            height: 400px;
+        }
+        .child_2{
+            background-color: aqua;
+            color: black;
+            font-weight: 700;
+            font-size: 20px;  
+            height: 200px;  
+        }
+        .parent_container{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .child_container{
+            height: 50px;
+            width: 50px;
+            background-color: red
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child_1">
+            Hello world !!
+        </div>
+        <div class="child_2">
+            Hello there!!
+        </div>
+    </div>
+    <div class="parent_container">
+        <div class="child_container"></div>
+    </div>
+    <a href = "https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target = "_blank">FlexBox examples</a>
+    <a href = "https://flexboxfroggy.com/" target="_blank">Flex Froggy game</a>
+</body>
+</html>
