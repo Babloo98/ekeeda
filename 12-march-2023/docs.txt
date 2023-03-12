@@ -1,3 +1,12 @@
-Hello sumit how are you !!
+Git commands : 
 
-i am good
+Branches : 
+git checkout branchname -> change branch
+git fetch --all -> fetch all the latest branches
+git checkout -b 'branch_Name' -> To cut a new branch from a existing branch
+
+Push/Pull : 
+git push origin 'branch_Name' -> Push the latest code of the particular branch
+git pull origin branch_Name -> Take the latest code of the particular branch
+
+git log
