@@ -16,6 +16,7 @@ git init ->  Initialize a project.
 git add . / git add filename --->
 git commit -am "Meaningful message"
 git push origin 'branch_Name' : default branch -> main 
+git checkout -b 'ekeeda-name'
 
 
 
