@@ -1,0 +1,159 @@
+Javsscript : 
+Agenda session : 
+1. History
+2. Details 
+3. execute javascript
+4. types 
+5. variable declaration
+6. Operators 
+
+
+1. History : 
+- 10 days : may, 1995
+- ECMA : European computer manufacturers association (ECMAscript)
+- javascript , typescript , coffescript
+
+ECMAscript - 6 (ES-6) major changes (2015)
+ES-11/10 
+engine : V8 Engine (Google introduce v8 engine to run js on browser)
+
+Data Types : 
+It is basically the type of data that we store in our system.
+
+Types : 
+1. undefined -> number strings and boolean values
+2. null -> object
+3. boolean : true/false
+4. Number : 0, 1, 2, 3, 4
+5. string : "Session - 05"
+6. symbol : Es6 
+7. Object (array and objects) : [1,2,3,4,5] {'name' : 'Babloo'}
+
+const/let/var 'nameOfvariable' = "value";
+
+
+Number : 
+let age = 59;
+max/min : -(2^53 - 1) to (2^53 -1)
+values : -Infinity and +Infinity
+
+String :
+String data type represent textual data  
+let name = "Ekeeda session";
+
+Boolean : 
+let bool = true;
+
+Object : 
+object always exist in key value pair : 
+let obj = {
+    'key' : 'value'
+}
+
+eg : let obj = {
+    'name' : "Sumit kumar",
+    'age' : 22,
+    'marks' : 70,
+    'pass' : true,
+};
+
+To pick any key in a object : 
+1. obj.keyNAme
+2. obj["keyNAme"]
+
+
+Symbol : 
+Symbol is basically a unique identifier.
+Symntax : var varaible name = Symbol('__value__')
+
+Variable           Explanation                                                          Example
+String        String is textual value                                        var varaible = "string value"
+Number        number doenot have quote                                       var variableName = 60;
+Boolean       True/False value [keywords]                                    var varaibleName = true/false;
+Array         Store multiple values.set of same data type values             var variableName = [2,3,4,5,7,8], ['babloo', "mishra", "sumit", "ekeeda"] (flat array)
+Object        function , array, symbol everything except primitive datatypes are object        let obj = {'name' : "Sumit kumar",'age' : 22,'marks' : 70,'pass' : true};
+
+
+Primitive data types : 
+predefined by javascript.
+These are the data types that doesnot have any predefined functions or we can say they are 
+simple data types.
+
+
+Questions : 
+1.create a object of classname :
+keys : name, age , profession, degree
+2. Create two strings of your first and last name and compare them on console 
+3. create a array of numbers 
+4. create a array of strings
+
+
+Answers : 
+let obj = {
+'name' : 'Babloo mishra',
+'age' : 25,
+'profession' : 'Senior software engineer',
+'degeree' : 'b.tech'
+};
+
+console.log(obj)
+
+let firstName = 'Babloo';
+let lastName = 'mishra';
+console.log(firstName == lastName);
+
+let arrayOfNumbers = [1,2,3,45,6];
+console.log(arrayOfNumbers);
+
+let arrayOfStrings = ["Babloo", "Mishra"];
+
+console.log(arrayOfStrings)
+
+Commenting : 
+Single line comment : 
+//Single line comment
+
+Multiline comment : 
+/*
+Array of strings
+Third question aswer
+Multi line comment 
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
