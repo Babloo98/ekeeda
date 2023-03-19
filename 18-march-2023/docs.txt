@@ -76,7 +76,7 @@ Object        function , array, symbol everything except primitive datatypes are
 
 Primitive data types : 
 predefined by javascript.
-These are the data types that doesnot have any predefined functions or we can say they are 
+These are the data types that does not have any predefined functions or we can say they are 
 simple data types.
 
 
