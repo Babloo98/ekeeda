@@ -65,6 +65,65 @@ function add(a, b){
 add(value1, value2)
 //value1+value2
 
+create a function with following functionality : 
+name : calculator(task, number1, number2)
+task = add, substract, divide, multiply
+result [>>>>>alert]
+alert("please padd some task in the function ")
+e.g: 
+calculator("add", 10, 20) -> alert(30)
+
+function calculator(task, number1, number2){
+	if(task == 'add'){
+  	alert(`Sum of two numbers is ${number1+number2}`)
+  }else if(task == 'sub'){
+  	alert(`Difference of two numbers is ${number1-number2}`)
+  }else if(task == 'mult'){
+  	alert(`Multiplication of two numbers is ${number1*number2}`)
+  }else if(task == 'div'){
+  	alert(`Division of two numbers is ${number1/number2}`)
+  }else {
+   alert("please pass valid task")
+  }
+};
+
+calculator("add", 10, 20);
+calculator("sub", 100, 20);
+calculator("mult", 10, 20);
+calculator("div", 100, 20);
+
+Question-2 : 
+create a function name greetings which take two arguments as name and degree and return
+a concatenated string ?
+answer : 
+function greetings(name , degree) {
+	const message = `Hey ${name} congrats you have completed your ${degree}`
+	alert(message)
+}
+
+greetings('Babloo mishra', 'B.tech')
+
+https://jsfiddle.net/Babloo1jan/vbao5qwd/16/
+
+string literals : 
+console.log("Babloo mishra")
+
+
+Switch : 
+Syntax:
+switch(key){
+    case 0: console.log("Case - 0 return")
+    break;
+    case 1 : console.log("Case - 0 return")
+    break;
+    .
+    .
+    .
+    default :console.log("default case")
+    break
+}
+
+
 
 
 
