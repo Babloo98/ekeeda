@@ -17,8 +17,7 @@ fetch  : objectName['keyName'] || object.keyName;
 
 Agenda :  
 1. Operators.
-2. Array functions.
-3. functions.
+2. functions.
 
 Operators in javascript : 
 1. Assignment operator : (=)
@@ -100,7 +99,6 @@ function greetings(name , degree) {
 	const message = `Hey ${name} congrats you have completed your ${degree}`
 	alert(message)
 }
-
 greetings('Babloo mishra', 'B.tech')
 
 https://jsfiddle.net/Babloo1jan/vbao5qwd/16/
@@ -111,10 +109,11 @@ console.log("Babloo mishra")
 
 Switch : 
 Syntax:
+
 switch(key){
-    case 0: console.log("Case - 0 return")
+    case task == 'add': console.log("Case - 0 return")
     break;
-    case 1 : console.log("Case - 0 return")
+    case task = "sub" : console.log("Case - 0 return")
     break;
     .
     .
@@ -123,8 +122,17 @@ switch(key){
     break
 }
 
+function calc(task, n1, n2){
+ switch(task){
+    case "add" : alert(n1+n2)
+    break;
+    case "sub" : alert(n1-n2)
+    break;
+ }
+}
 
-babloo is a good boy
+calc("sub", 10, 20)
+
 
 
 
