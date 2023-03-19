@@ -1,0 +1,96 @@
+Doubts javascript: 
+Object in js
+
+const obj = {
+    'key' : 'value'
+}
+
+e.g : const student = {
+    'name' : 'Babloo mishra',
+    'class' : '10th',
+    'grade' : 'A+',
+    'id' : 342
+}
+
+fetch  : objectName['keyName'] || object.keyName;
+
+
+Agenda :  
+1. Operators.
+2. Array functions.
+3. functions.
+
+Operators in javascript : 
+1. Assignment operator : (=)
+2. addition : (+)
+3. Substraction : (-)
+4. Multiplication : (*)
+5. Division : (/)
+6. modulo operator : (%) remainder findout 
+7. exponential operator : (**)
+8. euqal to operator : ( == / === )
+== operator : It is used to check the values only not datatypes;
+=== operator : It is used to check the values as well the data structure ;
+9. Not euqal operator  : (!=, !==)
+!= operator : It is used to check the values only not datatypes;
+!== operator : It is used to check the values as well the data structure ;
+
+* typeof operator  : 
+    type of operator is used to get the type of the particular variable .
+    e.g : typeof(variableName)
+
+If/Else : 
+if(name == 'babloo'){
+    console.log("welocme Babloo Mishra")
+}else{
+    console.log("Authenticate yourself")
+}
+
+
+
+Functions : 
+1.Function are small chunk of code that are repatative in the block.
+2. TO incerease reusability.
+3. To increase readability.
+
+syntax : function functionName(){
+    function body
+}
+
+e.g: 
+function add(a, b){
+    return a+b;
+}
+
+add(value1, value2)
+//value1+value2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
