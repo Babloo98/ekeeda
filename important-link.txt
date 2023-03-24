@@ -1,0 +1,4 @@
+important links for question practice of javascript
+
+1. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
+2. https://www.hackerrank.com/contests/7days-javascript/challenges/filters/page:1
