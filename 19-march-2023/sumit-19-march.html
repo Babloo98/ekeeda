@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- create a function with following functionality : 
+    name : calculator(task, number1, number2)
+    task = add, substract, divide, multiply
+    result [>>>>>alert]
+    alert("please padd some task in the function ")
+    calculator("add", 10, 20) -> alert(30) -->
+    <script>
+        function calculator (task, num1, num2){
+            if (task == "add") {
+               alert(num1 + num2) ;
+            } else if (task == "substract") {
+                alert(num1 - num2) ;
+            } else if(task == "multiply"){
+                alert(num1 / num2) ;
+            } else if(task == "devide"){
+                alert(num1 * num2) ;
+            } else {
+                alert("defasullll")
+            }
+        };
+       (calculator ("add", 5, 10));
+       (calculator ("substract", 5, 10));
+       (calculator ("devide", 5, 10));
+       (calculator ("multiply", 5, 10));
+
+
+    //    function : 
+    //     parameter : Name , degree 
+    //     message : Hey Babloo congrats you have completed your b.tch
+    function result (name, degree){
+        return(`Hey! ${name} congrats you have completed your ${degree}`);
+    }
+    alert(result("Babloo", "B.tech"));
+
+
+    function calcu(res, n1, n2){
+        switch(res){
+            case "add" : alert(n1 + n2)
+            break;
+            case "sub" : alert(n1 - n2)
+            break;
+        }
+    }
+    calcu("add", 10, 20);
+
+
+
+
+        
+    </script>
+</body>
+</html>
