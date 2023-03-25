@@ -1,0 +1,67 @@
+body{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.resume_basic_section{
+    display: flex;
+}
+
+.resume_contact_information{
+    padding: 25px;
+    background-color: #f4d284;
+}
+
+.contact_name{
+    font-size: 32px;
+    color: #343b30;
+    font-weight: 700;
+}
+
+.personal_info_list{
+    list-style: none;
+    padding: 0 !important;
+}
+
+.personal_info_list a{
+    text-decoration: none;
+    color: #343b30;
+}
+
+.personal_info_list li{
+    color: #343b30;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.resume_profession_summary{
+    background-color: #fdf6e6;
+    padding: 25px;
+}
+
+.summary_heading{
+    font-size: 18px;
+    color: #343b30;
+}
+
+.summary_description{
+    font-size: 15px;
+    color: #343b30
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
