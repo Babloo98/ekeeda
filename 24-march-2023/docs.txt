@@ -1,0 +1,85 @@
+Loop : 
+For loop->
+Syntax : 
+for(initialization; test-condition, increment/decrement){
+  statement body
+}
+
+e.g : for(var i = 0; i<100 ; i++){
+ console.log(">>>>>>", i)
+}
+
+While loop : entry controlled loop
+Syntax : while(condition){
+   Statements
+}
+
+e.g : 
+while(i < 100){
+ console.log(100)
+}
+
+Do while loop : Exit controlled loop
+syntax : do{
+  statement
+}while(condition)
+
+e.g : do{
+ console.log("Babloo")
+}while(i<100)
+
+--------------------------------------------------------------------------------
+
+1. Pre and post increment :
+
+let x = 3;
+const y = x++;
+console.log(x, y);
+
+let a = 3;
+const b = ++a;
+console.log(a, b);
+
+
+2. Pre/post decrement. :
+let x = 3;
+const y = x--;
+console.log(x, y);
+
+let a = 3;
+const b = --a;
+console.log(a, b);
+
+Try/catch : 
+Error handling : 
+try{
+  const a = 10;
+  console.log("try block")
+}catch(error){
+    console.log('error', error)
+}finally{
+    console.log(">>>>>Babloo mishra")
+}
+
+
+Objects : 
+Objects are key value pairs: 
+const ObjName = {'key' : 'value'}
+e.g : const employee = {'name' : 'Babloo Mishra', 'designation' : 'SSE'}
+fetch a value in employeeObj = employee['name'] || employee.key;
+
+Array methods : 
+push / unshift
+pop / shift
+reverse -> to reverse a array
+
+function checkPalindrome(string) {
+    let reverseString = string.split("").reverse().join("");
+    if(string ===  reverseString){
+        console.log(`${string} is a palindrome string `)
+    }else{
+        console.log("try another string ")
+    }
+}
+
+checkPalindrome("madam");
