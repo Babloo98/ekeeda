@@ -3,9 +3,11 @@ body{
     margin: 0 auto;
 }
 
-.resume_basic_section{
+.resume_basic_section {
     display: flex;
+    flex-direction: column;
 }
+
 
 .resume_contact_information{
     padding: 25px;

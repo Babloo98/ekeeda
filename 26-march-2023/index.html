@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div">
+        <input type="number">
+    </div>
+    <script>
+        function simpleIntrest(p, r, t){
+            let prt = p * r * t/100;
+            // let si = prt/100;
+            return prt;
+        }
+        console.log(simpleIntrest(5, 5, 4));
+
+
+        function oddEven (num){
+           let num1 = num%2;
+            if(num1 == 0){
+                console.log(`${num} is even`)
+            }
+            else{
+                console.log(`${num} is odd`)
+            }
+        }
+        oddEven(3);
+
+        function power(pValue){
+            switch(pValue){
+                case 2 : return "squre"
+                case 3 : return "cube"
+            }
+        }
+        function findSqure (square, square1){
+           let squreValue = square**square1;
+           switch(square1){
+                case 2 : return `squre of ${square} is ${squreValue}`
+                case 3 : return `cube of ${square} is ${squreValue}`
+            }
+        }
+        console.log(findSqure(2,3));
+
+    </script>
+</body>
+</html>
