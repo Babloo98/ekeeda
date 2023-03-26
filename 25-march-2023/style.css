@@ -1,6 +1,8 @@
 body{
     width: 70%;
     margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .resume_basic_section{
@@ -10,6 +12,7 @@ body{
 .resume_contact_information{
     padding: 25px;
     background-color: #f4d284;
+    width: 20%;
 }
 
 .contact_name{
@@ -28,7 +31,7 @@ body{
     color: #343b30;
 }
 
-.personal_info_list li{
+.personal_info_list li, .skill{
     color: #343b30;
     font-size: 15px;
     cursor: pointer;
@@ -38,9 +41,10 @@ body{
 .resume_profession_summary{
     background-color: #fdf6e6;
     padding: 25px;
+    width: 80%;
 }
 
-.summary_heading{
+.summary_heading, .skill_heading{
     font-size: 18px;
     color: #343b30;
 }
@@ -50,6 +54,32 @@ body{
     color: #343b30
 }
 
+.skills_section{
+    display: flex;
+}
+.skills{
+    width: 20%;
+    background-color: #fdf6e6;
+    padding: 25px;
+}
+
+.profession_experience{
+    width: 80%;
+    padding: 25px;
+}
+
+.skills_wrapper{
+    margin: 0;
+    padding: 0 10px;
+}
+
+.skill_heading{
+    margin-bottom: 10px;
+}
+
+.working_exp_list li{
+    margin-bottom: 10px;
+}
 
 
 
