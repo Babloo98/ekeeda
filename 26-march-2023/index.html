@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1. finding odd even
+      oddEven = (number) => {
+        if (number % 2 === 0) {
+          console.log(`${number} is a even number`);
+        } else {
+          console.log(`${number} is a odd number`);
+        }
+      };
+      oddEven(5);
+      oddEven(4);
+
+      //   2. finding squre and cube
+      function returnString(number) {
+        switch (number) {
+          case 2:
+            return "Square";
+          case 3:
+            return "Cube";
+        }
+      }
+      function findSqure(square, square1) {
+        var nums = square;
+        var power = square1;
+        var squreValue = square ** square1;
+        return `${returnString(square1)} of ${square} is ${squreValue}`;
+      }
+      console.log(findSqure(3, 2));
+      console.log(findSqure(3, 3));
+
+      //   other way to find squre and cube
+      function findSqureORcube(number, value) {
+        let squreORcube = number ** value;
+        switch (value) {
+          case 2:
+            return `squre of ${number} is ${squreORcube}`;
+          case 3:
+            return `cube of ${number} is ${squreORcube}`;
+        }
+      }
+      console.log(findSqureORcube(3, 2));
+      console.log(findSqureORcube(3, 3));
+
+      //   3. simple adding and substracting calculator
+      calulator = (operation, number1, number2) => {
+        switch (operation) {
+          case "add":
+            return add(number1, number2);
+          case "sub":
+            return sub(number1, number2);
+        }
+      };
+      add = (number1, number2) => {
+        return number1 + number2;
+      };
+      sub = (number1, number2) => {
+        return number1 - number2;
+      };
+      console.log(calulator("sub", 8, 3));
+      console.log(calulator("add", 8, 3));
+    </script>
+  </body>
+</html>
