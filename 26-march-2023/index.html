@@ -4,11 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .main {
+        padding: 40px;
+        background: #f1f1f1;
+        width: 500px;
+        margin: auto;
+        text-align: center;
+      }
+      input.factorial-input {
+        display: block;
+        margin: 20px auto 40px auto;
+        padding: 10px;
+        font-size: 20px;
+        border: 2px solid #333;
+        border-radius: 6px;
+      }
+      input.factorial-btn{
+        background: #f1f1f1;
+        color: #000;
+        
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      input.factorial-btn:hover{
+        background: #000;
+        color: #f1f1f1;
+        transition: 0.5s ease-in-out;
+      }
+
+      .res-txt {
+        height: 20px;
+        display: block;
+        font-size: 24px;
+        font-weight: 700;
+      }
+    </style>
     <title>Document</title>
   </head>
   <body>
-    <div class="div">
-      <input type="number" />
+    <div class="main">
+      <label for="input"><h3>Type a number of which you find factorial</h3></label>
+      <input class="factorial-input" type="number" id="input" />
+      <label for="input" class="res-txt"><span id="num1"></span></label>
+      <input class="factorial-input" type="number" id="result" />
+      <input class="factorial-input factorial-btn" type="button" id="button" value="Generate Answer" />
+      <p id="demo"></p>
     </div>
     <script>
       function simpleIntrest(p, r, t) {
@@ -108,27 +150,26 @@
         // if the number is not divisible by any number between 2 and its square root, it is a prime number
         console.log(`${num} is a prime number`);
       }
-    //   isPrime(1)
-    //   isPrime(6)
 
-      function findPrimes(start, end) {
-  const primes = [];
-  
-  for (let i = start; i <= end; i++) {
-    if (isPrime(i)) {
-      primes.push(i);
-    }
-  }
-  
-  return primes;
-}
-console.log(findPrimes(1, 100))
-
-
-
-
-let sonu = 1;
-
+      // 5. find the factorial of any number
+      let input = document.getElementById("input");
+      let result = document.getElementById("result");
+      let button = document.getElementById("button");
+      let num1 = document.getElementById("num1");
+      button.addEventListener("click", function () {
+        let num = input.value;
+        num1.innerHTML = `Factorial of ${num} is`;
+        result.value = 1;
+        if (num === "") {
+          result.value = "";
+        }else if(num == "0"){
+          result.value = "0";
+        } else {
+          for (i = num; i > 1; i--) {
+            result.value = result.value * i;
+          }
+        }
+      });
     </script>
   </body>
 </html>
