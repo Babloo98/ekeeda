@@ -80,7 +80,44 @@ test[0]
 test[1]
 test[2]
 
-Destructured : let [a, b ,c] =  test
+Destructured : let [a, b ,c] =  test;
+
+
+swapping of Variables : 
+
+let a = 56;
+let b = 45;
+
+function test(a, b){
+let temp = a;
+a = b;
+b = temp;
+console.log(a, b)
+return [a, b]
+}
+
+test(3, 4)
+
+
+es-6 : 
+let a = 1;
+let b = 2;
+[b,a] = [a, b];
+console.log(a, b);
+
+Arrow Functions : 
+Fat arrow functinos / arrow functions is most fetured fucntion of es-6;
+Advantage : 
+1. Concise syntax : 
+ es-6 : const test = () =>{}
+ const add = a => console.log(a)
+
+
+String literals : 
+const variableName = `My Name is ${jsvascript variable}`;
+
+for date functions : 
+moment  : https://momentjs.com/
 
 
 
