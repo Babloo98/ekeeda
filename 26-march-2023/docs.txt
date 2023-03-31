@@ -1,0 +1,5 @@
+JS question solving : 
+1. Convert degree to farenheight F = C × 9 5 + 32
+2. Reverse of a number. 123 -> 321
+3. calculate compound interest of a number A = P(1 + \frac{r}{n})^{nt}
+4. check a number is prime or not

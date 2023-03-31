@@ -1,50 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="div">
-        <input type="number">
+      <input type="number" />
     </div>
     <script>
-        function simpleIntrest(p, r, t){
-            let prt = p * r * t/100;
-            // let si = prt/100;
-            return prt;
+      function simpleIntrest(p, r, t) {
+        let prt = (p * r * t) / 100;
+        // let si = prt/100;
+        return prt;
+      }
+      console.log(simpleIntrest(5, 5, 4));
+
+      function oddEven(num) {
+        let num1 = num % 2;
+        if (num1 == 0) {
+          console.log(`${num} is even`);
+        } else {
+          console.log(`${num} is odd`);
         }
-        console.log(simpleIntrest(5, 5, 4));
+      }
+      oddEven(3);
+      function power(pValue) {
+        switch (pValue) {
+          case 2:
+            return "squre";
+          case 3:
+            return "cube";
+        }
+      }
+      function findSqure(square, square1) {
+        let squreValue = square ** square1;
+        switch (square1) {
+          case 2:
+            return `squre of ${square} is ${squreValue}`;
+          case 3:
+            return `cube of ${square} is ${squreValue}`;
+        }
+      }
+      console.log(findSqure(2, 3));
+
+      // 1. Convert degree to farenheight
+      degreeTOfahrenheit = (degree) => {
+        let fahrenheit = (degree * 9) / 5 + 32;
+        // degree = fahrenheit - 32 * 5/9;
+        console.log(`${fahrenheit} fahrenheit in ${degree} degree`);
+      };
+      degreeTOfahrenheit(37);
+
+      fahrenheitTOdegree = (fahrenheit) => {
+        let degree = ((fahrenheit - 32) * 5) / 9;
+        console.log(`${degree} degree in ${fahrenheit} fahrenheit`);
+      };
+      fahrenheitTOdegree(98.6);
+
+      // 2. Reverse of a number. 123 -> 321
+      reverseNumber = (givenNumber) => {
+        //   let reverseAnswer = (givenNumber.split("").reverse().join(""));
+        let reverseAnswer = Array.from(givenNumber).reverse().join("");
+        console.log(`reverse number of ${givenNumber} is ${reverseAnswer}`);
+      };
+      reverseNumber("12345");
+
+      //   find the string is palindrome or not
+      function checkPalindrome(string) {
+        let reverseString = string.split("").reverse().join("");
+        if (string === reverseString) {
+          console.log(`${string} is a palindrome string `);
+        } else {
+          console.log(`${string} is not a palindrome string `);
+        }
+      }
+      checkPalindrome("madam");
+      checkPalindrome("sumit");
+
+      //   3. calculate compound interest of a number
+      compoundIntrest = (p, r, n) => {
+        compound = p * (1 + r / 100) ** n;
+        compoundInt = compound - p;
+        console.log(
+          `compound intrest of principal Rs.${p} in ${n} years with ${r}% of annual rate of intrest is ${compoundInt}.`
+        );
+      };
+      compoundIntrest(4000, 5, 2);
+
+      // 4. check a number is prime or not
+
+      function isPrime(num) {
+        // check if number is less than 2, which is not a prime number
+        if (num < 2) {
+          console.log(`${num} is not a prime number`);
+        }
+
+        // check if the number is divisible by any number between 2 and its square root
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+          if (num % i === 0) {
+            console.log(`${num} is not a prime number`);
+          }
+        }
+
+        // if the number is not divisible by any number between 2 and its square root, it is a prime number
+        console.log(`${num} is a prime number`);
+      }
+    //   isPrime(1)
+    //   isPrime(6)
+
+      function findPrimes(start, end) {
+  const primes = [];
+  
+  for (let i = start; i <= end; i++) {
+    if (isPrime(i)) {
+      primes.push(i);
+    }
+  }
+  
+  return primes;
+}
+console.log(findPrimes(1, 100))
 
 
-        function oddEven (num){
-           let num1 = num%2;
-            if(num1 == 0){
-                console.log(`${num} is even`)
-            }
-            else{
-                console.log(`${num} is odd`)
-            }
-        }
-        oddEven(3);
 
-        function power(pValue){
-            switch(pValue){
-                case 2 : return "squre"
-                case 3 : return "cube"
-            }
-        }
-        function findSqure (square, square1){
-           let squreValue = square**square1;
-           switch(square1){
-                case 2 : return `squre of ${square} is ${squreValue}`
-                case 3 : return `cube of ${square} is ${squreValue}`
-            }
-        }
-        console.log(findSqure(2,3));
+
+let sonu = 1;
 
     </script>
-</body>
+  </body>
 </html>
