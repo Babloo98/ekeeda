@@ -75,7 +75,7 @@ let { name, education, age, eudcationDetail : {degree} } = student;
 console.log(name , education, age, degree);
 
 Array Destructuring : 
-    let test = ["corona", "fosters", "budweiser"];
+let test = ["corona", "fosters", "budweiser"];
 test[0]
 test[1]
 test[2]
