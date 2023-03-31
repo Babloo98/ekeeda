@@ -1,0 +1,101 @@
+9-10 : array function :
+
+Advance Javascript : 
+Es-6  : 2015 
+ECMAscript : A body to standarise the Js.
+Javscript : implmentaiton of ECMAscript.
+TC-39 : Group of people who wrote js.
+
+Es-6  : 
+Complex application 
+library support
+
+Variables : 
+var  : 
+1. Before es-6
+2. Functional scope / Global scope
+
+const  : 
+1. Introduces in ES-6
+2. Blocked scope.
+3. const variable cannot be redeclared neither be reassigned.
+
+let : 
+Introduces in ES-6
+1. Introduces in ES-6
+2. Blocked scope.
+3. can be reassigned.
+4. can be redeclared.
+
+
+function test(){
+    let foo = 1;
+    if(foo === 1){
+        let foo = 22;
+        console.log(foo)
+    }
+    if(foo === 22){
+        console.log(foo);
+    }
+    console.log(foo)
+}
+
+function test(){
+    const foo = 1;
+    if(foo === 22){
+        console.log(foo);
+    }
+    console.log(foo);
+}
+test()
+
+
+Destructuring : Destructuring makes extraction of data easy .
+const student = {
+    name : "sumit",
+    education : "b.tech",
+    age : 25
+}
+
+expected = student.name | student["name"]
+desturcred way : 
+let { name , education, age } = student;
+name, education, age
+
+Object Destructuring : 
+const student = {
+    name : "sumit",
+    education : "b.tech",
+    age : 25,
+    eudcationDetail : {
+        'degree' : "b.tech"
+    }
+}
+let { name, education, age, eudcationDetail : {degree} } = student;
+console.log(name , education, age, degree);
+
+Array Destructuring : 
+    let test = ["corona", "fosters", "budweiser"];
+test[0]
+test[1]
+test[2]
+
+Destructured : let [a, b ,c] =  test
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
