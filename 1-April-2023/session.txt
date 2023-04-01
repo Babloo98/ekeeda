@@ -1,0 +1,85 @@
+Array Functions : 
+push : Add a value in a array from backward;
+array.push(value)
+pop : Remove a value from a array from backward;
+array.pop()
+shift :  Remove a element from front of array;
+array.shift()
+unshift : Add a value in front of array ;
+array.unshift(value);
+
+Methods :
+1. .at : array.at(index)  
+It gives you the value at a given index;
+
+2. .concat : It adds two arrays and return a single array;
+example : 
+const array1 = ['a', 'b', 'c'];
+const array2 = ['d', 'e', 'f'];
+const array3 = array1.concat(array2);
+console.log(array3)
+
+3. copywithin : 
+const array1 = ['a', 'b', 'c', 'd', 'e'];
+console.log(array1.copyWithin(0, 3, 4));
+console.log(array1.copyWithin(1, 3));
+
+4. entries :
+Provide an itterator to itterate on all objects 
+
+5 : filters : 
+Filters and array specefic condition .
+syntax : array.filter(item => {
+    return condition (item<45)
+})
+
+6 :  hasOwnProperty : 
+Has own property return weather a object contains a key or not 
+if yes it returns a true 
+if not it returns a false.
+
+7. map : 
+syntax : array.map(item =>{
+    condition (manipulate my values)
+})
+
+map return a new array.
+
+8. forEach : 
+syntax : array.map(item =>{
+    condition (manipulate my values)
+})
+
+forEach doesnot return any new array.
+doenot changes the value of current array.
+it is just an itterator.
+
+9. includes : 
+It checks weather a array have a particular value or not;
+array.includes(value to be checked)
+
+10 : isArray : 
+This method checks weather a value is array or not ;
+Array is a keyword herer
+Array.isArray(value to be checked)
+
+11 : array.reverse(): 
+This method just reverses the arrayfirst value last and vice-versa;
+
+12 : some() :
+This method return true if even a single condition is true.
+const test = a.some((item) => {
+    return item < 60
+});
+
+13 : every() :
+This method return true if all the itterator are true.
+const test = a.every((item) => {
+    return item < 60
+});
+
+14 : slice
+
+15 : splice
+
+16 : sort
