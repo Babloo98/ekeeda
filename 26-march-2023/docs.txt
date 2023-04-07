@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+=======
+important links
+
+1. https://www.hackerrank.com/challenges/solve-me-first/problem?isFullScreen=true
+2. https://www.hackerrank.com/challenges/staircase/problem?isFullScreen=true
+
+
+questions for assignment 
+>>>>>>> ff42b298866a65f95dc80bd497d97ea61e585f99
 JS question solving : 
 1. Convert degree to farenheight F = C × 9 5 + 32
 2. Reverse of a number. 123 -> 321
