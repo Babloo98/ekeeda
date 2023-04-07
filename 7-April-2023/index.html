@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Questions : Write a function to substract till value becomes less then 0 in the itteration of 4 ?
+        // let a = 100;
+        // setInterval(() => {
+        //     if (a - 4 > 0) {
+        //         a = a - 4;
+        //         console.log(a)
+        //     }
+        // }, 10);
+
+        // Exercise : Create a timer from 5Minutes 59 seconds to 0min 0seconds?
+        let sec = 60;
+        let min = 5;
+        let timer = setInterval(() => {
+            if (sec > 0) {
+                sec = sec - 1;
+                // console.log(`0${min} : ${sec}`)
+            }
+            else {
+                sec = 60;
+            }
+
+            if(sec == 0){
+                min = min - 1;
+            }
+            if(min == -1){
+                clearInterval(timer);
+                console.log("time up")
+            }
+        }, 1000)
+    </script>
+</body>
+
+</html>
