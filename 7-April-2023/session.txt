@@ -1,0 +1,119 @@
+Advance Javascript : 
+1. Hoisting. 
+2. callbacks.
+3. Closures.
+4. Self invoking functions.
+
+Settimeout : 
+setTimeout(()=>{
+    greeting("Mukesh")
+}, milliseconds)
+
+Set Interval : 
+setInterval(()=>{
+    greeting("Sumit kumar")
+}, milliseconds)
+
+//Questions to be done 
+
+Hanling of async functions in javascript : 
+console.log("console 1");
+setTimeout(()=>{
+    console.log("console 2");
+}, 0)
+console.log("console 3");
+console.log("console 4");
+setTimeout(()=>{
+    console.log("console 5");
+}, 0)
+console.log("console 6");
+
+1. Hoisting :
+
+Vairable hoisting :
+1. Var 
+console.log("I am being printed", a);
+var a = 10;
+execute : 
+The initialization of the variable will move to top of the scope.
+var a;
+console.log("I am being printed", a);
+a=10;
+
+
+2. let and const  : Temporal dead Zone.
+console.log("I am being printed", a);
+const a = 10;
+execute : 
+The initialization of the variable will move to top of the scope.
+console.log("I am being printed", a);
+const a = 10;
+
+Function hoisting : 
+testFunction();
+This function will not be hoisted as we are storing the function in a varibale name
+const testFunction = () =>{
+    console.log("I am being executed");
+}
+
+This function initialization as well as declaration will be hoisted to the top.
+function testFunction(){
+    console.log("I am being executed");
+}
+
+
+4. Self invoking functions/ Immediately invoked functions : 
+(()=>{
+    console.log("Hello i am here");
+})();
+
+2. Callbacks : 
+Function taking another function as an argument is know as callbacks.
+const test = () =>{
+    console.log("Test");
+}
+
+const greetings = (name, test) =>{
+    console.log("Hey", name, test());
+};
+
+
+const processUsername = (functionCallback) =>{
+   console.log("adsasda", functionCallback("Babloo Mishra", test));
+};
+
+processUsername(greetings);
+
+When we have multiple callbacks inside the callbacks this is termed as callback hell.
+
+
+2. Closures : 
+
+const first = () =>{
+    const greet = "Hi";
+    const second = () =>{
+        console.log(greet);
+    }
+    return second;
+}
+
+const secondFunction = first();
+console.log(secondFunction())
+
+
+Questions : Write a function to substract till value becomes less then 0 in the itteration of 4 ?
+let a = 100;
+setInterval(()=>{
+    if(a-4 > 0){
+        a = a - 4;
+        console.log(a)
+    }
+}, 10);
+
+Exercise : Create a timer from 5Minutes 59 seconds to 0min 0seconds?
+
+
+5. fetch.
+6. try/catch block.
+7. async await.
+8. promises.
