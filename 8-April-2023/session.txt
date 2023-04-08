@@ -1,0 +1,48 @@
+1. fetch.
+2. try/catch block.
+3. async await.
+4. promises.
+
+
+
+Try/catch Block : 
+API response : 
+200 : OK;
+503 : temprorly unavailable;
+404 : Page not found;
+500 : Server not available;
+403 : User not authorised;
+
+try{
+    This blocks execute when there is no error in the code/API's
+}catch(error){
+    when there is any error in api/js then our catch block executes
+}finally{
+    This blocks execute every time the try and catc h is called.
+}
+
+3. Async/Await : 
+
+
+4. Promises : 
+promise is basically a object which tells the completeion/rejection/pending state of an async operaation.
+
+Promise have following state : 
+1. pending : inital state, neither fulfill nor rejected.
+2. fulfilled : Operation have been completed successfully.
+3. rejected : That the operation has failed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

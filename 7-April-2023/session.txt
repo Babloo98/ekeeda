@@ -3,13 +3,15 @@ Advance Javascript :
 2. callbacks.
 3. Closures.
 4. Self invoking functions.
+setTimeout
+SetInterval
 
 Settimeout : 
 setTimeout(()=>{
     greeting("Mukesh")
 }, milliseconds)
 
-Set Interval : 
+SetInterval : 
 setInterval(()=>{
     greeting("Sumit kumar")
 }, milliseconds)
@@ -113,7 +115,3 @@ setInterval(()=>{
 Exercise : Create a timer from 5Minutes 59 seconds to 0min 0seconds?
 
 
-5. fetch.
-6. try/catch block.
-7. async await.
-8. promises.
