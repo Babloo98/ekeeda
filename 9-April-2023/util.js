@@ -75,26 +75,32 @@ const useClosure = (array) =>{
     return childFunction;
 }
 
+const solution3 = (array) =>{
+    resultArray = [];
+    // const result = array.filter(item=>item.age>20);
+    array.forEach(item => {
+        if(item.age>20){
+            resultArray.push(item)
+        }
+    })
+    document.getElementById("solution_3").innerHTML = JSON.stringify(resultArray)
+}
 
 
+//function to be executed for finding number of occurance :
+const a = [1,2,3,4,1,1,1, 1, 1, 2,4,5,6,7,843,2,3];
+const returnUpdatedObj = (array) =>{
+    const updatedObj = {};
+    
+    a.forEach(singleNumber => {
+        // single Number = 1,2,3,4,1,1,1, 1, 1, 2,4,5,6,7,843,2,3
+        if(updatedObj.hasOwnProperty(singleNumber)){
+            updatedObj[singleNumber] = updatedObj[singleNumber]+1;
+        }else{
+            updatedObj[singleNumber] = 1;
+        }
+    })
+    console.log(updatedObj)
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+returnUpdatedObj(a)

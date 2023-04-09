@@ -8,13 +8,6 @@ Array reduce method
 6. Closures.
 7. Self invoking functions. 
 
-5. async await.
-6. promises.
-7. fetch. 
-
-
-
-
 Hoisting : 
 Variable hoisting  : 
 1. It only happens in case of variable declared with var.
@@ -141,6 +134,7 @@ o/p :
     3 : 2 ...
 }
 
-
-
-
+Pending :
+async await.
+promises.
+fetch.
