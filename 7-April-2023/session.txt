@@ -18,7 +18,7 @@ setInterval(()=>{
 
 //Questions to be done 
 
-Hanling of async functions in javascript : 
+Hanling of async functions in2. callbacks. javascript : 
 console.log("console 1");
 setTimeout(()=>{
     console.log("console 2");
