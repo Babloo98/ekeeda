@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>April</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./util.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav>9-April</nav>
+      <section class="setTimeout">
+        <p class="primary_text">SetTimeOut</p>
+        <button class="btn_primary" onclick="handleSetTimeout()">
+          SetTimout
+        </button>
+        <p id="setTimeout_result"></p>
+      </section>
+      <section class="setinterval">
+        <p class="primary_text">SetInterval</p>
+        <button class="btn_primary" onclick="handleSetInterval()">
+          SetInterval
+        </button>
+        <p id="setInterval_result"></p>
+      </section>
+      <section class="add_array_elements">
+        <p class="primary_text">Add array elements</p>
+        <button
+          class="btn_primary"
+          onclick="addArrayElements([2, 3, 4, 5, 6, 7, 8])"
+        >
+          Add array Elements
+        </button>
+        <p id="setInterval_result"></p>
+      </section>
+      <section class="errorHandling">
+        <p class="primary_text">Error Handling</p>
+        <button class="btn_primary" onclick="useTryCatch()">
+          Error Handling
+        </button>
+        <p id="setInterval_result"></p>
+      </section>
+
+      <section class="errorHandling">
+        <p class="primary_text">Callbacks</p>
+        <button class="btn_primary" onclick="useCallback([1,2, 3, 4])">
+          Callback handling
+        </button>
+        <p id="setInterval_result"></p>
+      </section>
+
+      <section class="errorHandling">
+        <p class="primary_text">Callbacks</p>
+        <button class="btn_primary" onclick="useClosure([1,2, 3, 4])">
+          Closure handling
+        </button>
+        <p id="setInterval_result"></p>
+      </section>
+
+      <section class="errorHandling">
+        <p class="primary_text">Question - 3</p>
+        <button
+          class="btn_primary"
+          onclick="solution3([
+            {'name'  : 'Babloo Mishra', age : 25, degree : 'b.tech'},
+            {'name'  : 'Mukesh', age : 28, degree : 'BCA'},
+            {'name'  : 'Sumit', age : 27, degree : 'b.sc'},
+            {'name'  : 'Monu', age : 19, degree : 'b.tech'},
+          ])"
+        >
+          Solution 3
+        </button>
+        <p id="solution_3"></p>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: #b28080;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn_primiary{
+    border: 1px solid #b28080;
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: #b28080;
+    background-color: transparent;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.btn_primiary:hover{
+    background-color: #b28080;
+    color: #ffffff;
+}

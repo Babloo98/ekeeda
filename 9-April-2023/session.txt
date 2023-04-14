@@ -1,0 +1,140 @@
+1. setTimeout.
+2. SetInterval.
+3. Hoisting.
+Array reduce method
+
+4. try/catch block. [error handling]
+5. callbacks.
+6. Closures.
+7. Self invoking functions. 
+
+Hoisting : 
+Variable hoisting  : 
+1. It only happens in case of variable declared with var.
+2. In case of const/ let the hositing is not done as it goes to an unreachable state known as temporal dead zone.
+
+
+console.log("Hell there", variableName);
+var variableName = "Babloo Mishra";
+
+It will be executed as : 
+var variableName; // initialization is hosited 
+console.log("Hell there", variableName);
+variableName = "Babloo Mishra"; //declaration
+
+Output : Undefined;
+
+
+console.log("Hell there", variableName);
+const variableName = "Babloo Mishra";
+
+It will be executed as : 
+console.log("Hell there", variableName); // reference error  
+const variableName = "Babloo Mishra"; //No hoisting will be done as it is const it goes to TDZ
+
+
+2. Functional Hositing  : 
+console.log(test1(), test());
+
+function test(){
+    console.log("hello therer");
+}
+
+var test1 = () =>{
+    console.log("Hello how are you")
+}//TypeError: test1 is not a function
+
+
+const test1 = () =>{
+    console.log("Hello how are you")
+}//TypeError: test1 is not a function
+
+
+This will be executed as variable hoisting has more precedence then functional;
+test1 = () =>{
+    console.log("Hello how are you");
+    return "Babloo"
+};
+console.log(test1());
+
+var test1;
+
+
+Question time : 
+1. Find the sum of all elements in a array ?
+I/O : [2, 3, 4, 5, 6 ,7];
+O/P : 27
+
+2. Print fizz in case of multiple of 3?
+I/O : 1-100
+O/P : 1, 2, fizz, 4, 5, fizz, 6, 7 , fizz...
+
+
+
+Try/catch block : 
+It is a method of error handling in javascript application : 
+try{
+
+}catch(error){
+
+}finally{
+
+}
+
+callbacks : 
+when one function takes another function as his argument it is known as callback.
+const useCallback = (array) =>{
+    const result = array.map((item)=>callbackFunction(item));
+    setTimeout(()=>callback2("Babloo"), 1000);
+    console.log(">>>>>", result)
+    return result;
+}
+
+const callbackFunction = (item) => item*10;
+
+const callback2 = (item) => {
+    console.log("iteiitieitie", item);
+}
+
+
+Closures : 
+Function returning another function is known as Closures.
+The child function will have access to all my parent variables.
+
+Self invoking functions/ immediately invoked fucntions : 
+These are the functions which just run after there initialization:
+syntax : 
+(()=>{
+    console.log("hello sumit")
+})()
+
+
+3. Group items on the basis of age ? 
+
+I/O : 
+[{'name'  : 'Babloo Mishra', age : 25, degree : 'b.tech'}, 
+{'name'  : 'Monu', age : 19, degree : 'b.tech'},
+{'name'  : 'Mukesh', age : 28, degree : 'BCA'},
+{'name'  : 'Sumit', age : 27, degree : 'b.sc'}]
+
+O/p : 
+filter the objects whose age is greater then 20
+[
+    {'name'  : 'Babloo Mishra', age : 25, degree : 'b.tech'},
+    {'name'  : 'Mukesh', age : 28, degree : 'BCA'},
+    {'name'  : 'Sumit', age : 27, degree : 'b.sc'}
+]
+
+4. Find number of occurances ?  
+I/O : [1,2,3,4,1,2,4,5,6,7,843,2,3];
+o/p : 
+{
+    1 : 2 ,
+    2 : 3 ,
+    3 : 2 ...
+}
+
+Pending :
+async await.
+promises.
+fetch.
