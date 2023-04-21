@@ -1,0 +1,33 @@
+.calculate_inputs{
+    width: 20vw;
+    height: 30vh;
+    background-color: #ff385c;
+    padding: 20px;
+}
+
+
+.calculate_inputs .inputField{
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+
+.calculate_inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.submit_btn{
+    padding: 10px 20px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.submit_btn:hover{
+    background-color: #ffffff;
+    color: #ff385c;
+}

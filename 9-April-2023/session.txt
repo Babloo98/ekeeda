@@ -138,3 +138,17 @@ Pending :
 async await.
 promises.
 fetch.
+
+
+let details = [{'name'  : 'Babloo Mishra', age : 25, degree : 'b.tech'}, 
+{'name'  : 'Monu', age : 19, degree : 'b.tech'},
+{'name'  : 'Mukesh', age : 28, degree : 'BCA'},
+{'name'  : 'Sumit', age : 27, degree : 'b.sc'}]
+
+1. Age <26 and degree b.tech
+2. b.tech
+
+
+let array = [1,2, 3, 4 ]
+create a function with name duplicate ;
+duplicate(array) = o/p : [1, 2, 3, 4, 1, 2, 3, 4]
