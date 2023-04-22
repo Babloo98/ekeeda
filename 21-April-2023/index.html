@@ -4,28 +4,6 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./reset.css" />
     <title>Programming</title>
-    <script>
-      let string = "";
-
-      const onSubmit = (e) => {
-        console.log(e);
-        const row = document.getElementById("rows").value;
-        const columns = document.getElementById("columns").value;
-        // Outer loop will run for a complete row
-        for (let i = 1; i <= row; i++) {
-          //i==2
-          let str = "";
-          // Inner loop will create cells in the row
-          for (let j = 1; j <= columns; j++) {
-            str = str + i * j;
-          }
-          // My task : Breaking it into new line
-          string = `${string}${str}`;
-          document.write(`${str}<br>`);
-        }
-        // document.getElementById("calculatedResult").innerHTML = string;
-      };
-    </script>
   </head>
   <body>
     
@@ -45,9 +23,30 @@
       <button onclick="onSubmit(event)" id = "babloo" class="submit_btn test">
         Please Calculate
       </button>
-      <p id="calculatedResult"></p>
+      <p id="calculatedResult">0</p>
     </section>
     <div></div>
+    <script>
+      let string = "";
+
+      const onSubmit = (e) => {
+        console.log(e);
+        const row = document.getElementById("rows").value;
+        const columns = document.getElementById("columns").value;
+        // Outer loop will run for a complete row
+        for (let i = 1; i <= row; i++) {
+          //i==2
+          let str = "";
+          // Inner loop will create cells in the row
+          for (let j = 1; j <= columns; j++) {
+            str = str + i * j;
+          }
+          // My task : Breaking it into new line
+          string = `${string}${str} <br>`;
+        }
+        document.getElementById("calculatedResult").innerHTML = string;
+      };
+    </script>
   </body>
 </html>
 
