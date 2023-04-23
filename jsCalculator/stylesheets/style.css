@@ -1,0 +1,50 @@
+h2{
+    background-image: url("https://img.freepik.com/free-photo/vivid-transparent-orange-autumn-leaf_23-2148239677.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 100px;
+    font-weight: 900;
+}
+
+.calculator_wrapper{
+    background-color: #ff385c;
+    max-width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.calculator_display{
+    background-color: #ffffff;
+    padding: 6% 8%;
+    border-radius: 15px;
+    font-size: 25px;
+    /* color: #ff385c; */
+    font-weight: 700;
+    text-align: right;
+}
+
+.row_value{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row_value p{
+    padding: 6% 8%;
+    background-color: #ffffff;
+    color: #ff385c;
+    margin-top: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.zero_element{
+    padding: 6% 20% !important;
+}
+
+img{
+    width: 16px;
+}

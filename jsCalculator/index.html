@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML - Calculator</title>
+    <link rel="stylesheet" href="./stylesheets/reset.css" />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+  </head>
+  <body>
+    <h2>Calculator</h2>
+    <section class="calculator_wrapper">
+      <div class="calculator">
+        <div id="display" class="calculator_display">
+          <p id="display_value">0</p>
+        </div>
+        <div id="numpad">
+          <div class="row_value">
+            <p>(</p>
+            <p>)</p>
+            <p onclick="clearLastInput()">CE</p>
+            <p onclick="clearInput()">C</p>
+          </div>
+          <div class="row_value">
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <p>*</p>
+          </div>
+          <div class="row_value">
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>-</p>
+          </div>
+          <div class="row_value">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>+</p>
+          </div>
+          <div class="row_value">
+            <p class="zero_element">0</p>
+            <p>.</p>
+            <p>=</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+
+      let displayValue = "";
+
+      const clearLastInput = () =>{
+           //pop method not working on array herer
+           displayValue = displayValue.slice(0,-1);
+           document.getElementById("display_value").innerHTML = displayValue;
+      }
+
+       const clearInput = () =>{
+           console.log("I am prinitng")
+           document.getElementById("display_value").innerHTML = "0";
+       }
+
+       const calculateValue = (value) =>{
+
+
+           const applyOpr = (operator, left, right) =>{
+               result = left;
+               console.log("adsadsa", right, operator)
+
+               switch(operator){
+                   case "+" :
+                   result += `${right}`;
+                   break;
+               }
+               return result;
+           }
+
+           const apply = (expression, onApply) =>{
+               let result = 0;
+               let updatenumber = "";
+               let operator = null;
+               let prevWasOp = false;
+               let sign= '';
+
+               let parsed = '';
+
+               for (let i=0; i<expression.length; i++){
+                   let c = expression[i];
+                   let isLast = i === expression.length-1;
+                   if(!isNaN(parseInt(c))){
+                       updatenumber += c;
+                       prevWasOp = false;
+                   }else if(prevWasOp || i === 0){
+                       if(/[+-/]/.test(c)){
+                           sign = c;
+                           continue;
+                       }
+                       prevWasOp = false;
+                   }
+                   let number = parseInt(`${sign}${updatenumber}`);
+                   sign = "";
+
+                   if(operator === null){
+                       result = number;
+                       operator = c;
+                       if(onApply !== operator){
+                           parsed += `${updatenumber}${operator}`;
+                           result = 0;
+                           }
+                   }else{
+                       if(onApply === operator){
+                           result = applyOpr(operator, result, number);
+                       }
+                           if(c!==onApply){
+                               parsed+=`${result}`;
+                               if(!isLast){
+                                   parsed +=`${c}`;
+                               }
+                               result = 0;
+                           }
+                           operator = c;
+                       }
+                //    }
+                   number = '';
+                   prevWasOp = ["+", "-", "*", "/"].indexOf(c)>=0;
+               }
+               return parsed;
+           }
+
+           const divPass = apply(value, "/")
+           const mulPass = apply(divPass, "*") 
+           const addPass = apply(mulPass, "+")
+            const subPass = apply(addPass, "-")
+
+
+
+           return result
+       }
+
+       const inputData = (event) =>{
+           let number = event.key;
+           let regEx = /[0-9.]/g;
+           let condition = /[()+_*/]/g;
+           if(number.match(regEx)){
+               document.getElementById("display_value").innerHTML = `${displayValue}${event.key}`;
+               displayValue = displayValue+event.key;
+           }else{
+               if(event.key.match(condition)){
+                   document.getElementById("display_value").innerHTML = `${displayValue}${event.key}`;
+                   displayValue = displayValue+event.key;
+               }
+               if(event.key === "="){
+                   // const calculatedValue = eval(displayValue);
+                   let calculatedValue = calculateValue(displayValue);
+           console.log("adsadadsa", calculatedValue);
+
+                   document.getElementById("display_value").innerHTML = `${calculatedValue}`;
+                   displayValue = calculatedValue;
+               }
+           }
+       }
+       document.addEventListener("keyup", inputData);
+    </script>
+  </body>
+</html>
