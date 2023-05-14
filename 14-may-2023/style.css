@@ -1,0 +1,200 @@
+/* @keyframes test {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+@keyframes rigth_to_left {
+    0%{
+        background-color: red;
+        left: 0;
+        top: 0;
+    }
+    25%{
+        background-color: yellow;
+        left: 200px;
+        top: 0;
+    }
+    50%{
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75%{
+        background-color: rgb(108, 108, 150);
+        left: 0;
+        top: 200px;
+    }
+    100%{
+        background-color: green;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.main_div{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.child_div{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    animation-name: rigth_to_left;
+    animation-duration: 4s;
+    background-color: green;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+} */
+
+/* @keyframes moves {
+    from{left: 0;}
+    to{left: 300px;}
+}
+
+div{
+    width: 100px;
+    height: 50px;
+    background-color: green;
+    animation: moves 5s;
+    margin-bottom: 15px;
+    position: relative;
+    animation-fill-mode: forwards;
+}
+
+Timing funciton on transition/animation : 
+.div_1{
+    animation-timing-function: linear;
+}
+.div_2{
+    animation-timing-function: ease;
+}
+.div_3{
+    animation-timing-function: ease-in;
+}
+.div_4{
+    animation-timing-function: ease-out;
+}
+.div_5{
+    animation-timing-function: ease-in-out;
+} */
+
+
+/* .parent_container{
+    background-color: red;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.child_container{
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 10px;
+    bottom: 50px;
+}
+
+.fixed{
+    position: fixed;
+    height: 50px;
+    width: 200px;
+    bottom: 0;
+    right: 0;
+} */
+
+.parent_container{
+    height: 300px;
+    width: 20%;
+    background-color: red;
+    overflow: auto;
+}
+
+.heading{
+    background-color: white;
+    color: red;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.transformer{
+    height: 100px;
+    width: 200px;
+    background-color: red;
+    transition: transform 2s;    
+}
+
+.transformer:hover{
+    transform: scale(0.5, 0.5);
+}
+
+/* .skew{
+    height: 100px;
+    width: 200px;
+    background-color: red;
+    transform: rotateZ(20deg);
+} */
+
+
+/* .transition{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: width 2s;    
+}
+
+.transition:hover{
+    width: 500px;
+} */
+
+
+/* .pseudo{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+
+.pseudo:hover{
+    background-color: green;
+    transform: scale(2, 3);
+} */
+
+/* .first{
+    background-color: red;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.first:last-child{
+    color: white;
+    background-color: black;
+} */
+
+.container{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: relative;
+    padding: 15px;
+}
+
+.after{
+    position: relative;
+    padding-left: 30px;
+}
+
+.after::after{
+    content: "B";
+    position: absolute;
+    left: 10px;
+}
+
+.after::first-letter{
+    font-size: 20px;
+}
+
+

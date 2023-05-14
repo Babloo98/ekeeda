@@ -1,0 +1,85 @@
+Animations : 
+1. Animation let you change a elemtn style from one to another.
+2. You can do it for a specific time / for infinite time period.
+3. I have to create a keyframe
+4. keyframe - storrage of style in Animation
+
+----------------------------------------------------------------------------------------------------------------------------
+Properties : 
+animation-name : name of the keyframe.
+animation-duration  : It tells how long the animation should take to complete.[is is taken in seconds]
+animation-delay : Delays the animation for some time
+animation-iteration-count : Used to tell how much time the animation should run
+animation-fill-mode: forwards/backwards(By Default);
+
+animation : keyframe-name  animation-duration animation-timing-funciton animation-iteration-count animation-direction;
+----------------------------------------------------------------------------------------------------------------------------
+Positions : 
+1. Static
+2. relative
+3. fixed
+4. absolute
+5. Sticky.
+
+1. static  :    
+1.1 : Default property
+1.2 : It goes with the normal flow of the page
+
+2/4 : relative/ absolute : 
+relative : parent
+absolute : child
+Fixed Position : 
+This is relative to viewport
+----------------------------------------------------------------------------------------------------------------------------
+
+Transform  :
+Transform allows you to move , rotate, scale, and skew the object
+Translate : translate(x-posiiton, y-posiiton);
+rotate : rotate(90deg);
+scale : scale(scalex, scaley);
+scaleX  : scale();
+scaleY : scale();
+Matrix : matrix(scaleX, skewY, scaleY, translateX, translateY)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Transition  :
+It is used to make the animation more smooth
+Transition
+transition-delay : same as animation
+transition-duration : same as animation
+transition-property : transition : width 2s, height 2s, transform 2s;
+transition-timing-funciton : same as animation
+
+----------------------------------------------------------------------------------------------------------------------------
+Psedo : 
+English Meaning : false 
+
+pseudo classes and pseudo elements  : 
+
+Pseudo-classes : 
+It is used to define a special state of a element : 
+List : 
+1. hover
+2. first-child
+3. last-child
+4. first-of-type
+
+anchor : 
+1. link
+2. visited
+3. hover
+4. active
+
+
+Pseudo-elements : 
+after
+before
+first-letter
+last-letter
+
+
+
+
+
+
