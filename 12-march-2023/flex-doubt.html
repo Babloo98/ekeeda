@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<!-- it is ony for showing that we are using HTML-5 version -->
+<!-- it is only for showing that we are using HTML-5 version -->
 <!-- HTML can run without any specified tag -->
 <html>
 <head>
@@ -25,17 +25,22 @@
             height: 200px;  
         }
         .parent_container{
-            height: 200px;
-            width: 200px;
+            height: 500px;
+            width: 500px;
             background-color: blue;
             display: flex;
             align-items: center;
             justify-content: center;
         }
         .child_container{
-            height: 50px;
-            width: 50px;
+            height: 450px;
+            width: 450px;
             background-color: red
+        }
+        table th, td{
+            border: 1px solid blue;
+            align-content: center;
+
         }
     </style>
 </head>
@@ -49,7 +54,30 @@
         </div>
     </div>
     <div class="parent_container">
-        <div class="child_container"></div>
+        <div class="child_container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S. N.</th>
+                        <th>Name of student</th>
+                        <th>Course/ Syllabus</th>
+                        <th>Contact Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>Mukesh</td>
+                        <td>Full Stack Developer</td>
+                        <td>9116360101</td>
+                    </tr>
+                    <td>2.</td>
+                    <td>Sumit</td>
+                    <td>Full Stack Developer</td>
+                    <td>9116360101</td>
+                </tbody>
+            </table>
+        </div>
     </div>
     <a href = "https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target = "_blank">FlexBox examples</a>
     <a href = "https://flexboxfroggy.com/" target="_blank">Flex Froggy game</a>
